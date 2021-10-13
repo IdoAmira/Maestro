@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    android:id="@+id/course_nsv">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/curse_toolbar"
+        android:background="@color/white"
+        app:titleTextColor="@color/orange"
+        app:title="@string/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+    <TextView
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/curse_toolbar"
+        android:id="@+id/course_title"
+        android:background="@color/black"/>
+
+    <ImageView
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/course_title"
+        android:id="@+id/course_image_iv"/>
+
+    <ExpandableListView
+        android:layout_marginTop="10dp"
+        android:id="@+id/subject_elv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="10dp"
+        android:layout_below="@+id/course_image_iv"
+        android:groupIndicator="@drawable/indicator_custome"
+        android:divider="@android:color/transparent"
+        android:childDivider="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</RelativeLayout>
